@@ -15,6 +15,7 @@
     top: 10%;
     left: 0%;
     width: 100vw;
+    z-index: 999;
   }
 
   .resNav_links {
@@ -42,7 +43,7 @@
     padding: 20px 0;
     text-decoration: none;
     transition: all 0.2s ease-in;
-    color: rgba(0, 0, 0, 0.89);
+    color: rgba(255, 255, 255, 0.89);
     z-index: 999;
   }
   .resNav_link:hover{
