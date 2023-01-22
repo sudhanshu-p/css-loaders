@@ -15,6 +15,7 @@
     "vite": "^4.0.0"
   },
   "dependencies": {
-    "svelte-color-picker": "^1.0.7"
+    "svelte-color-picker": "^1.0.7",
+    "svelte-typewriter": "^3.1.4"
   }
 }

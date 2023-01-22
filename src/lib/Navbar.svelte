@@ -45,7 +45,7 @@
     left: 0%;
     z-index: 999;
     margin-bottom: 1rem;
-    background-color: #181a1c;
+    background-color: #181a1ca4;
   }
 
   .nav {

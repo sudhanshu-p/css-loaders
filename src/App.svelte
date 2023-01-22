@@ -4,11 +4,12 @@
     import Navbar from "./lib/Navbar.svelte";
 </script>
 
-<main>
+<main >
     <Navbar/>
     <Hero />
-    <!-- <ShowPage /> -->
+    <ShowPage />
 </main>
 
 <style>
+    
 </style>
