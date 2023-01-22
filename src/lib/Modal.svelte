@@ -1,5 +1,5 @@
 <script>
-// @ts-nocheck
+    // @ts-nocheck
 
     import { createEventDispatcher } from "svelte";
     import Loader1 from "./Loader1.svelte";
@@ -11,15 +11,27 @@
     import { HighlightSvelte } from "svelte-highlight";
     import atomOneDark from "svelte-highlight/styles/atom-one-dark";
     import css from "svelte-highlight/languages/css";
+
+    const dispatch = createEventDispatcher();
+    let stateOfModal = "get-code";
+    let isColorOpen = false;
+    let detail = {
+        r: 3,
+        g: 99,
+        b: 255,
+        a: 1
+    };
+    let border = 16;
+    let time = 1;
     const htmlCode = `<div class="custom-loader"></div>`;
-    const cssCode = `.custom-loader {
+    $: cssCode = `.custom-loader {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     border-style: solid;
-    border-width: 16px;
-    border-color: '#766df4 #0000';
-    animation: s1 1s infinite;
+    border-width: ${border}px;
+    border-color: rgba(${detail.r}, ${detail.g}, ${detail.b}, ${detail.a}) #0000;
+    animation: s1 ${time}s infinite;
 }
 @keyframes s1 {
     to {
@@ -27,14 +39,6 @@
     }
 }
     `;
-
-    const dispatch = createEventDispatcher();
-    let stateOfModal = "get-code";
-    let isColorOpen = false;
-    let detail;
-    let border = 16;
-    let time = 1;
-
     export let isOpenModal;
 
     function closeModal() {
@@ -122,10 +126,10 @@
                     />
                 </span>
             {:else}
-                <h1>HTML:</h1>
-                <HighlightSvelte code={htmlCode}/>
-                <h1>CSS: </h1>
-                <HighlightSvelte code={cssCode} language={css}/>
+                <h4>HTML:</h4>
+                <HighlightSvelte code={htmlCode} />
+                <h4>CSS:</h4>
+                <HighlightSvelte code={cssCode} language={css} />
             {/if}
         </div>
     </div>
