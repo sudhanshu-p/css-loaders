@@ -11,6 +11,10 @@
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.0.0",
     "svelte": "^3.54.0",
+    "svelte-highlight": "^7.1.2",
     "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "svelte-color-picker": "^1.0.7"
   }
 }
