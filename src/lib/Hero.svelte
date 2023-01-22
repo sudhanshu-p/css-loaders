@@ -34,26 +34,17 @@
   .Hero_sec {
     background: url("../assets/hero.png");
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    background-size: 100vw 90vh;
     margin-top: 5rem;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
   }
 
-  @media (max-width: 768px) {
-    .Hero_sec {
-      background-size: 100% 100vh;
-      height: 100vh;
-    }
-  }
-  @media (max-width: 1160px) {
-    .Hero_sec {
-      background-size: 100% 100vh;
-      height: 100vh;
-      margin-top: 0%;
-    }
-  }
 
   .Hero_div {
     position: absolute;
@@ -64,9 +55,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-color: pink; */
     gap: 1rem;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
   }
   .part_1 {
     max-width: 35%;
@@ -74,12 +64,11 @@
     width: 40%;
     height: 100%;
     display: flex;
-    /* background-color: #13298F; */
     justify-content: flex-start;
     align-items: center;
   }
   .hero_text {
-    /* padding-left: 4rem; */
+    padding-left: 4rem;
     font-family: "Poppins", sans-serif;
   }
   .hero_text > h1 {
@@ -112,7 +101,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #13298F; */
     width: 55%;
     height: 100%;
   }
@@ -217,4 +205,37 @@
       padding-left: 10rem;
     }
   }
+
+  @media (max-width: 768px) {
+    .Hero_sec {
+      background-size: 100% 100vh;
+      height: 100vh;
+    }
+    .Hero_div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .part_2{
+      display: none;
+    }
+
+    .part_1{
+      width: 100%;
+      width: 100%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  @media (max-width: 1160px) {
+    .Hero_sec {
+      background-size: 100% 100vh;
+      height: 100vh;
+      /* margin-top: 0%; */
+    }
+
+  }
+
 </style>
