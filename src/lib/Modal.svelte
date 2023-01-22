@@ -185,6 +185,8 @@
         color: black;
         filter: drop-shadow(0 0 20px #333);
         width: min(80%, 50rem);
+        margin-top: 2rem;
+        z-index: 1000;
     }
     #modal > * {
         padding: 20px;

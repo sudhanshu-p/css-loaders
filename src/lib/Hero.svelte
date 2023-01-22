@@ -8,7 +8,7 @@
 </script>
 
 <section class="Hero_sec">
-  <Navbar />
+  <!-- <Navbar /> -->
   <div class="Hero_div">
     <div class="part_1">
       <div class="hero_text">
@@ -57,7 +57,7 @@
     gap: 1rem;
     position: absolute;
     top: 12vh;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
   .part_1 {
     max-width: 35%;

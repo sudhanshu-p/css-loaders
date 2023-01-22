@@ -1,5 +1,7 @@
 <script>
   import logo from "../assets/logo.jpg";
+  import ResNav from "./ResNav.svelte";
+  import { fade } from "svelte/transition";
   let windowWidth = window.innerWidth;
   let clicked = false;
   function handleResize() {
@@ -22,11 +24,16 @@
       <li class="nav_link">About</li>
       <li class="nav_link">Loaders</li>
       <button class="burger" on:click={handleClick}
-        ><i class={clicked ? "fa fa-times" : "fas fa-bars"} /></button
+        ><i class={clicked ? "burderL fa fa-times" : " burderL fas fa-bars"} /></button
       >
     </ul>
   </nav>
 </header>
+{#if clicked}
+  <div transition:fade>
+    <ResNav />
+  </div>
+{/if}
 
 <style>
   .header {
@@ -37,9 +44,10 @@
     top: 0%;
     left: 0%;
     z-index: 999;
-    margin-bottom: 1rem ;
+    margin-bottom: 1rem;
     background-color: #181a1c;
   }
+
   .nav {
     width: 100%;
     height: 100%;
@@ -92,6 +100,9 @@
     display: none;
     font-size: x-large;
     width: 2rem;
+    background-color: #181a1c00;
+    border: none;
+    outline: none;
   }
 
   @media (max-width: 768px) {
@@ -114,6 +125,9 @@
     }
     .nav_links .burger {
       display: block;
+    }
+    .burger i{
+      background-color: rgba(255, 0, 0, 0);
     }
   }
 </style>
