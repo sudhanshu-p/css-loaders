@@ -4,14 +4,16 @@
   import gif3 from "../assets/gif3.gif";
   import gif4 from "../assets/gif4.gif";
   import gif5 from "../assets/gif5.gif";
-  import { concurrent } from "svelte-typewriter";
+  import Typewriter from 'svelte-typewriter'
 </script>
 
 <section class="Hero_sec">
   <div class="Hero_div">
     <div class="part_1">
       <div class="hero_text">
-        <h1 use:concurrent={{ interval: 120 }}>CSS Loader Generator</h1>
+        <Typewriter>
+          <h1 style="font-size: 2.5rem;">CSS Loader Generator</h1>
+        </Typewriter>
         <button>Get Loader Now</button>
       </div>
     </div>
@@ -82,6 +84,7 @@
   .hero_text > button {
     width: 15rem;
     padding: 10px 2px;
+    margin-top: 5rem;
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;

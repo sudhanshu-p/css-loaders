@@ -12,10 +12,10 @@
     "@sveltejs/vite-plugin-svelte": "^2.0.0",
     "svelte": "^3.54.0",
     "svelte-highlight": "^7.1.2",
+    "svelte-typewriter": "^3.1.4",
     "vite": "^4.0.0"
   },
   "dependencies": {
-    "svelte-color-picker": "^1.0.7",
-    "svelte-typewriter": "^3.1.4"
+    "svelte-color-picker": "^1.0.7"
   }
 }
