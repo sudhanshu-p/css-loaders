@@ -15,8 +15,20 @@
   -webkit-text-size-adjust: 100%;
 }
 
-*{
+* {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+}
+
+@keyframes s1 {
+  to {
+    transform: rotate(0.5turn);
+  }
+}
+
+@keyframes s2 {
+  to {
+    transform: rotate(1turn)
+  }
 }

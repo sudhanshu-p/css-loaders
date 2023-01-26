@@ -9,7 +9,3 @@
     <Hero />
     <ShowPage />
 </main>
-
-<style>
-    
-</style>

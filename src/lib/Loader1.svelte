@@ -23,9 +23,4 @@
         border-color: '#766df4 #0000';
         animation: s1 1s infinite;
     }
-    @keyframes s1 {
-        to {
-            transform: rotate(0.5turn);
-        }
-    }
 </style>

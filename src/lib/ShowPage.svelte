@@ -65,7 +65,7 @@
         cursor: pointer;
     }
     .container {
-        background-color: #fff;
+        background-color: #0b0f1f;
         margin: auto;
         display: flex;
         flex-wrap: wrap;
@@ -92,7 +92,7 @@
         border-radius: 7px;
     }
     .body {
-        background-color: #fff;
+        background-color: #0b0f1f;
         height: 100vh;
         padding-top: 5rem;
     }
