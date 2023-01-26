@@ -19,7 +19,7 @@
         r: 3,
         g: 99,
         b: 255,
-        a: 1
+        a: 1,
     };
     let border = 16;
     let time = 1;
@@ -127,9 +127,13 @@
                 </span>
             {:else}
                 <h4>HTML:</h4>
-                <HighlightSvelte code={htmlCode} />
+                <div class="code">
+                    <HighlightSvelte code={htmlCode} class="high-code"/>
+                </div>
                 <h4>CSS:</h4>
-                <HighlightSvelte code={cssCode} language={css} />
+                <div class="code">
+                    <HighlightSvelte code={cssCode} language={css} />
+                </div>
             {/if}
         </div>
     </div>
@@ -144,6 +148,18 @@
         justify-content: left;
         align-items: center;
         align-content: left;
+    }
+
+    .modal-right {
+        overflow-x: auto;
+    }
+
+    @media screen and (max-width: 992px) {
+        .color-select,
+        .boundary-select,
+        .time-select {
+            flex-direction: column;
+        }
     }
 
     .color-picker > button {
