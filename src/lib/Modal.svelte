@@ -13,7 +13,7 @@
     import css from "svelte-highlight/languages/css";
 
     const dispatch = createEventDispatcher();
-    let stateOfModal = "get-code";
+    let stateOfModal = "customize";
     let isColorOpen = false;
     let detail = {
         r: 3,
@@ -86,7 +86,9 @@
     </div>
     <div class="modal-body">
         <div class="modal-left">
-            <Loader1 {detail} {border} {time} />
+            {#if stateOfModal === "customize"}
+                <Loader1 {detail} {border} {time} />
+            {/if}
         </div>
         <div class="modal-right">
             {#if stateOfModal === "customize"}
@@ -128,7 +130,7 @@
             {:else}
                 <h4>HTML:</h4>
                 <div class="code">
-                    <HighlightSvelte code={htmlCode} class="high-code"/>
+                    <HighlightSvelte code={htmlCode} class="high-code" />
                 </div>
                 <h4>CSS:</h4>
                 <div class="code">
