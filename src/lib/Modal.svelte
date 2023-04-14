@@ -1,9 +1,6 @@
 <script>
-    // @ts-nocheck
-
     import { createEventDispatcher } from "svelte";
     import Loader1 from "./Loader1.svelte";
-    // @ts-ignore
     import { HsvPicker } from "svelte-color-picker";
     import Paint from "../assets/paint-pallete.png";
     import Size from "../assets/loader-size.png";

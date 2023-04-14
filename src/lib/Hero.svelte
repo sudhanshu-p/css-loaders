@@ -1,9 +1,9 @@
 <script>
-  import gif1 from "../assets/gif1.gif";
-  import gif2 from "../assets/gif2.gif";
-  import gif3 from "../assets/gif3.gif";
-  import gif4 from "../assets/gif4.gif";
-  import gif5 from "../assets/gif5.gif";
+  import gif1 from "../assets/gif1.webm";
+  import gif2 from "../assets/gif2.webm";
+  import gif3 from "../assets/gif3.webm";
+  import gif4 from "../assets/gif4.webm";
+  import gif5 from "../assets/gif5.webm";
   import Typewriter from 'svelte-typewriter'
 </script>
 
