@@ -4,7 +4,7 @@
   import gif3 from "../assets/gif3.webm";
   import gif4 from "../assets/gif4.webm";
   import gif5 from "../assets/gif5.webm";
-  import Typewriter from 'svelte-typewriter'
+  import Typewriter from "svelte-typewriter";
 </script>
 
 <section class="Hero_sec">
@@ -21,12 +21,20 @@
     <div class="part_2">
       <div class="angry-grid">
         <div id="item-0">
-          <img src={gif2} class="gif" alt="gif1" />
+          <video src={gif2} class="gif" alt="gif1" autoplay loop />
         </div>
-        <div id="item-1"><img src={gif3} class="gif" alt="gif1" /></div>
-        <div id="item-2"><img src={gif1} class="gif" alt="gif1" /></div>
-        <div id="item-3"><img src={gif5} class="gif" alt="gif1" /></div>
-        <div id="item-4"><img src={gif4} class="gif" alt="gif1" /></div>
+        <div id="item-1">
+          <video src={gif3} class="gif" alt="gif1" autoplay loop />
+        </div>
+        <div id="item-2">
+          <video src={gif1} class="gif" alt="gif1" autoplay loop />
+        </div>
+        <div id="item-3">
+          <video src={gif5} class="gif" alt="gif1" autoplay loop />
+        </div>
+        <div id="item-4">
+          <video src={gif4} class="gif" alt="gif1" autoplay loop />
+        </div>
       </div>
     </div>
   </div>
@@ -47,7 +55,6 @@
     /* overflow: hidden; */
   }
 
-
   .Hero_div {
     position: absolute;
     top: 0%;
@@ -58,7 +65,7 @@
     justify-content: space-around;
     align-items: center;
     gap: 1rem;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
   }
   .part_1 {
     max-width: 35%;
@@ -195,21 +202,20 @@
       background-size: 100% 100vh;
       height: 100vh;
     }
-    .Hero_div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .Hero_div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-    .part_2{
+    .part_2 {
       display: none;
-      
     }
 
-    .part_1{
+    .part_1 {
       width: 100%;
       width: 100%;
-      display:flex;
+      display: flex;
       justify-content: center;
       align-items: center;
     }
@@ -220,10 +226,9 @@
       height: 100vh;
     }
 
-    .Hero_div{
+    .Hero_div {
       position: absolute;
       top: 0%;
     }
   }
-
 </style>
